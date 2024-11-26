@@ -1,0 +1,21 @@
+import requests
+
+def get_weather_forecast(location):
+    API_KEY = 'your_api_key'  # Replace with your weather API key
+    BASE_URL = f"http://api.weatherapi.com/v1/forecast.json?key={API_KEY}&q={location}&days=7"
+
+    response = requests.get(BASE_URL)
+    if response.status_code == 200:
+        data = response.json()
+        forecast = data['forecast']['forecastday']
+        print(f"Weather forecast for {location}:")
+        for day in forecast:
+            print(f"{day['date']}: {day['day']['condition']['text']}, Max Temp: {day['day']['maxtemp_c']}°C")
+        return forecast
+    else:
+        print("Failed to fetch weather data.")
+        return None
+
+# Example usage
+location = "Bangalore"
+get_weather_forecast(location)
