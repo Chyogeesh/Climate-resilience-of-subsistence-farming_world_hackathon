@@ -14,3 +14,9 @@ Example Initiatives
 Crop Rotation: Shifting crops seasonally to maintain soil health.
 Rainwater Harvesting: Collecting and storing rainwater for irrigation during dry spells.
 Resilient Crop Varieties: Using genetically engineered or indigenous varieties that resist extreme temperatures, pests, or flooding.
+1. Simple Weather Data Integration for Crop Planning
+Python script to fetch weather data for advising farmers on planting dates.
+2. Crop Yield Prediction Based on Climate Data
+This example uses machine learning to predict yields based on climate parameters like rainfall, temperature, and soil moisture.
+3. Community Resilience Dashboard
+Using a web app like Flask or Django to display key climate resilience metrics for farmers.
